@@ -25,9 +25,11 @@
       }
     </style>
   </head>
-  <body class="d-flex justify-content-center align-items-center bg-dark bg-gradient
-  ">
-    <main >
+  <body
+    class="d-flex justify-content-center align-items-center bg-dark bg-gradient"
+  >
+    <main class="signin-page">
+      <div class="alert alert-signin text-center" role="alert"></div>
       <form class="row g-3">
         <h1 class="h1 mb-3 fw-bold text-center text-secondary">Sign in</h1>
 
@@ -64,6 +66,16 @@
         </button>
       </form>
     </main>
+
+    <section class="container home d-none">
+      <div class="alert alert-home text-center" role="alert"></div>
+      <h1 class="welcome h1 mb-3 fw-bold text-center text-white"></h1>
+      <div class="d-flex justify-content-center">
+        <button class="w-50 btn btn-lg btn-danger signout" type="button">
+          Sign Out
+        </button>
+      </div>
+    </section>
 
     <script type="module" src="index.js"></script>
     <script
